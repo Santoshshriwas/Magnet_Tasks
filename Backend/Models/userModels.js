@@ -31,8 +31,9 @@ const userSchema = mongoose.Schema({
       },
       info:{
         type:String
-      }
+      },
+      image:String,
+      role:String
 })
-module.exports = mongoose.model("user_Collection",userSchema);
-const userModel = mongoose.models.user || mongoose.model("user_Collection", userSchema);
+const userModel = mongoose.model("user_Collection", userSchema);
 export default userModel;
